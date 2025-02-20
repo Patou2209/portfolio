@@ -5,62 +5,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Satisfy&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="2-removebg-preview.png" type="image/png" sizes="20x20">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small  w3-center w3-hide-small ">
-  <!-- Avatar image in top left corner -->
-  <img src="coding-1853305_1280.jpg" style="width:100%" class="w3-circle">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>A PROPOS</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-building w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+<!-- Navbar-->
+<div class="navigation">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#"><b>Kaziama Mupese</b></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#adress">Nos adresses</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#about">A Propos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="https://api.whatsapp.com/send?phone=+27698089022&text=Bonjour,%20je%20suis%20intéressé%20par%20vos%20services." 
+                              target="_blank" title="Envoyer un message WhatsApp"
+                              onclick="return !window.open(this.href, '','top=50 left=100 width=360 height=570')">
+                               Contactez-nous</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
   </div>
 </div>
+<!-- Navbar End-->
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h2 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Kaziama Mupese.</h2>
-    <p> Web App & Mobile Developer.</p>
-    <img src="2-removebg-preview.png" alt="patou" class="w3-image w3-opacity w3-circle" width="992" height="1000" >
+  <header id="home">
+    <p> <b>Web App</b> and <b>Mobile Developer</b>.</p>
+    <div class="imagecentral">
+      <img src="2-removebg-preview.png" alt="patou">
+    </div>
+    
   </header>
 
   <!-- About Section -->
@@ -149,7 +152,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey"> Quelques images des projects déjà réalisé 😍</h2>
+    <h2 class="w3-text-light-grey"> La qualité n'est pas le fruit du hasard 😍</h2>
     <hr style="width:200px" class="w3-opacity w3-hover-opacity-off">
 
     <!-- Grid for photos -->
@@ -179,12 +182,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h2 class="w3-text-light-grey">Contact  </h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
+    <div class="w3-section" id="adress">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Pretoria, SA</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +27 698089022</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: patoukaziama@mail.com</p>
     </div><br>
-    <p>Restons en contact. Envoie-moi un message:</p>
+    <p>Envoyez-nous un message Directe:</p>
 
     <form >
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
@@ -214,6 +217,28 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+  <!-- Script pour faire fonctionner le button menu du navbar -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Script pour faire un scrol smooth -->
+  <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener("click", function(event) {
+              event.preventDefault();
+              const targetId = this.getAttribute("href").substring(1);
+              const targetElement = document.getElementById(targetId);
+              
+              if (targetElement) {
+                  window.scrollTo({
+                      top: targetElement.offsetTop - 50, // Ajuste selon la hauteur du menu
+                      behavior: "smooth"
+                  });
+              }
+          });
+      });
+  </script>
 
 </body>
 </html>
